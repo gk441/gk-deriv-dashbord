@@ -1,14 +1,4 @@
-# netlify.toml — place this in the root of your GitHub repo
-
 [build]
-  # Directory where Netlify installs dependencies and runs build
   base = "frontend"
-  # Directory to publish your built site
-  publish = "frontend/dist"
-  # Build command to run
-  command = "npm run build"
-
-# Optional: Dev server settings (useful for local testing)
-[dev]
-  port = 3000
-  framework = "react"
+  command = "npm ci && npm run build"
+  publish = "dist"
